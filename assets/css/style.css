@@ -1,0 +1,402 @@
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+/* COMMON */
+.clear {
+    clear: both;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.column {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.column-half {
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+
+}
+
+.text-white {
+    color: white !important;
+}
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0px;
+    z-index: 1;
+    width: 100%;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav > li > a {
+    text-transform: uppercase;
+}
+
+#nav i {
+    display: inline-block;
+}
+
+#nav .nav-arrow-down {
+    display: inline-block;
+}
+
+#header .mobile-menu-btn {
+    position:absolute;
+    top: 0px;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
+#header #search-button {
+    float: right;
+    line-height: 22px;
+    padding: 12px 24px;
+    color:#fff;
+}
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+#header #search-button:hover {
+    background-color: #f44336;
+    cursor:pointer;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    list-style: none;
+    position: relative;
+}
+
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 24px;
+    display: block;
+    line-height: 46px;
+}
+
+#nav .subnav a {
+    color: #000;
+    line-height: 38px;
+    padding: 0 66px 0px 16px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav {
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    top: 100%;
+    box-shadow: 0 0 10px #141313;
+}
+
+#nav > li:hover > a {
+    color: #333;
+    background-color: #ccc;
+}
+
+#nav .subnav li:hover a{
+    background-color: #ccc;
+}
+
+#slider {
+    color: #fff;
+    position: relative;
+    margin-top: 46px;
+    background:url('../img/la.jpg') top center/ cover no-repeat;
+    padding-top: 50%;
+}
+
+#slider .text-heading {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translate(-50%);
+    line-height: 1.5;
+    text-shadow: 0 0 2px #000;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#content .content-section {
+    padding: 64px 0px 112px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 800px;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 8px;
+}
+
+#content .section-heading {
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+#content .section-sub-heading {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+#content .section-description {
+    font-family: Verdana,sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 14.5px;
+    line-height: 1.5;
+}
+
+#content #bandmembers {
+    margin-top: 48px;
+    
+}
+
+#content #bandmembers .members {
+   float: left;
+   width: 33.33333%;
+}
+
+#content .member-img {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.tour-section {
+    background-color: #000;
+}
+
+.tour-tickets-list {
+    text-align: left;
+    margin-top: 40px;
+    background-color: white;
+    list-style-type: none;
+}
+
+.tour-tickets-list li {
+    color: #757575;
+    font-size: 15px;
+    padding: 9px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tour-tickets-list .Sold-out {
+    color: #fff;
+    background-color: #f44336;
+    padding: 3px 6px;
+    margin-left: 16px;
+}
+
+.tour-tickets-list .quantity {
+    color: #fff;
+    float: right;
+    border-radius: 50%;
+    background-color: #000;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 1px;
+    margin-right:  16px;
+}
+
+/* PLACE */
+
+.place-list{
+    display: inline-block;
+    margin-top: 16px;
+    /* margin-bottom: 48px; */
+}
+.place-list .place-items{
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+}
+
+.place-list .place-items img {
+    display: block;
+    width: 100%;
+}
+
+.place-list .place-items img:hover {
+    opacity: 0.7;
+}
+
+.place-list .place-items .place-body{
+    background-color: #fff;
+    height: 202px;
+    padding: 16px ;
+    text-align: left;
+    font-size: 15px;
+}
+
+.place-heading{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.tour-date {
+    margin: 15px 0px;
+    color: #757575;
+}
+.place-desc{
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    text-align: left;
+}
+
+.contact-content .contact-info i{
+    width: 30px;
+    display: inline-block;
+    /* text-align: left !important; */
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .form-submit-btn {
+    color:#fff;
+    background-color: #000;
+    border-radius: 2px;
+    padding: 8px 16px;
+    cursor: pointer;
+    white-space: nowrap;
+    border: none;
+    height: 38px;
+    width: 70px;
+    float: right;
+}
+
+.contact-form .form-submit-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.map-section img{
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list {
+    font-size: 24px;
+}
+
+#footer .social-list a {
+    color: rgba(0, 0, 0, 0.6);
+    background-color: #f1f1f1!important;
+}
+
+#footer .social-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copy-right {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copy-right a{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copy-right a:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
